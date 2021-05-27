@@ -17,8 +17,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 3. Usage of NGRX store to retrieve information. [NOTE: Currently information is stored but NOT retrieved. Select query not working, needs debugging]
 4. Making table display more generic rather than hard coding.
 5. More imporved changed detection technique for dropdown components thus increasing reusability.
+6. Addition of Linting for maintability.
 
 ## flow of application
 1. Parent component is app.component.
 2. Child component for dropdown is region.component
-3. Child component for table is country-details.component. 
+3. Child component for table is country-details.component.
+4. Store actions created in file store.action
+5. Store reducer has been created in file store.reduce. 
