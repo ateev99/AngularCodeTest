@@ -1,27 +1,24 @@
-# CountryDemographics
+## INSTALLATION INSTRUCTIONS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
+## AngularCodeTest (Steps to install)
+1. Open CMD. Clone the from GIT ()
+2. Change directory to AngularCodeTest
+3. Hit command a npm install.
+4. Hit command ng build
+5. Hit command ng serve
+6. Application would open in browser, select region then country
 
 ## Development server
-
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## What could be improved, if i had time (time take to build: 6 hours)
+1. Usage of CSS in a better way.
+2. Addition of karma test cases.
+3. Usage of NGRX store to retrieve information. [NOTE: Currently information is stored but NOT retrieved. Select query not working, needs debugging]
+4. Making table display more generic rather than hard coding.
+5. More imporved changed detection technique for dropdown components thus increasing reusability.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## flow of application
+1. Parent component is app.component.
+2. Child component for dropdown is region.component
+3. Child component for table is country-details.component. 
