@@ -1,0 +1,18 @@
+<table class="comp-c">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Capital</td>
+            <td>Population</td>
+            <td>Flag</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let countryDetail of countryDetailsList">
+            <td>{{countryDetail.name}}</td>
+            <td>{{countryDetail.capital}}</td>
+            <td>{{countryDetail.population}}</td>
+            <td><img class='imageSize' src ="{{countryDetail.flag}}"></td>
+        </tr>
+    </tbody>
+</table>
