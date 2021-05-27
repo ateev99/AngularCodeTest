@@ -14,7 +14,6 @@ export class GetDetailsService {
   public getCountryDetails(region:string): Observable<CountryDetails[]> {
     const completeServiceURL = this.serviceRootUrl+region;
     const countryDetailsFromCache = this.responseCache.get(completeServiceURL);
-    console.log('Caceh se ayaa'+ countryDetailsFromCache);
     if (countryDetailsFromCache) {
       return of(countryDetailsFromCache);
     }
