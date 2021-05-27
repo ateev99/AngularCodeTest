@@ -1,0 +1,10 @@
+<div  class="dropdown">
+    <Label class="pad">{{displayLabel}}</Label>
+    <select (change)="onChangeDropdown($event)"  class="">
+        <option value="0">Not Selected</option>
+        <option *ngFor="let displayValue of listValue" value={{displayValue}}>
+          {{displayValue}}
+        </option>
+      </select>
+</div>
+
